@@ -59,7 +59,7 @@ jobs:
         run: |
           aws ecr get-login-password --region us-east-1 \
           | docker login --username AWS \
-          --password-stdin 846734598921.dkr.ecr.us-east-1.amazonaws.com/tracefinder
+          --password-stdin 846734598921.dkr.ecr.us-east-1.amazonaws.com
 
       - name: Build and push Docker image
         run: |
